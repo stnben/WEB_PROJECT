@@ -1,0 +1,141 @@
+﻿.main-content {
+    background: url('file:///C:/Users/stani/WEB_PROJECT/image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 0 20px;
+    text-align: center;
+}
+
+    .main-content h1 {
+        font-size: 4rem;
+        margin-bottom: 30px;
+    }
+
+    .main-content p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        max-width: 800px;
+        margin-bottom: 30px;
+    }
+
+.get-started-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+    .get-started-btn:hover {
+        background-color: #0056b3;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#preferences-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    
+}
+
+    #preferences-form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #preferences-form input,
+    #preferences-form select {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #preferences-form button {
+        display: block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+    }
+
+        #preferences-form button:hover {
+            background-color: #0056b3;
+        }
+
+#interview {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    #interview form {
+        margin-top: 10px;
+        display: flex;
+    }
+
+    #interview input {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    #interview button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        #interview button:hover {
+            background-color: #0056b3;
+        }
+
+footer {
+    width: 100%;
+    color: #ffffff;
+}
+
+    footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
