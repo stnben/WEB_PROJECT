@@ -43,13 +43,6 @@ $("#send-message").on("submit", function (event) {
         input
     };
 
-    import StarrySky from './StarrySky';
-
-    ReactDOM.render(<StarrySky />, document.getElementById('root'));
-    <script src="dist/script.js"></script>
-
-
-
     console.log("Sending data:", data);
 
     $.ajax({
