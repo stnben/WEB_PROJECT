@@ -95,4 +95,4 @@ class StarrySky extends React.Component {
     }
 }
 
-ReactDOM.render(<StarrySky />, document.getElementById("root"));
+export default StarrySky;
