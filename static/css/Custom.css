@@ -1,12 +1,12 @@
 ﻿.main-content {
-    background: url('file:///C:/Users/stani/WEB_PROJECT/image.jpg') no-repeat center center fixed;
+    background-color: #1B263A;
     background-size: cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: #A4DDDB;
     padding: 0 20px;
     text-align: center;
 }
@@ -45,7 +45,7 @@
 }
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa;
 }
 
@@ -56,10 +56,12 @@ body {
 }
 
 header {
+    background-color: #261A40;
     width: 100%;
 }
 
 .navbar {
+    background-color: #261A40;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -67,9 +69,9 @@ header {
 #preferences-form {
     background-color: #ffffff;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     
 }
 
