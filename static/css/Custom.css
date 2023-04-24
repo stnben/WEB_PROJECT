@@ -1,4 +1,15 @@
-﻿.main-content {
+﻿
+
+.welcome-background {
+    background-image: url('C:\Users\stani\WEB_PROJECT\static\image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.main-content {
     background-color: #1B263A;
     background-size: cover;
     min-height: 100vh;
