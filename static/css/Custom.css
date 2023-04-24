@@ -86,12 +86,16 @@ header {
 }
 
 #preferences-form {
-    background-color: #ffffff;
+    background-color: #1B263A;
     padding: 30px;
     border-radius: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 26px;
-    
+    width: 280%;
+    color:aliceblue
+}
+body.section.container.mt5 {
+    background-color: #1B263A;
 }
 
     #preferences-form label {

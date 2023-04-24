@@ -13,6 +13,9 @@ app = Flask(__name__)
 OPENAI_API_KEY = "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"
 openai.api_key = OPENAI_API_KEY
 
+@app.route('/preferences')
+def preferences():
+    return render_template('preferences.html')
 
 
 @app.route('/api/handle_message', methods=['POST'])
