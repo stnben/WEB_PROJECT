@@ -1,41 +1,89 @@
-﻿
-
-.welcome-background {
-    background-image: url("../img/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+﻿:root {
+    --primary-color: #261A40;
+    --secondary-color: #0575E6;
+    --text-color: #F5F5F5;
+    --background-color: #FFFFFF;
 }
 
-.main-content {
-    background-color: #1B263A;
-    background-size: cover;
-    min-height: 100vh;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+    a:hover {
+        color: var(--secondary-color);
+    }
+
+.container.mt-5 {
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: #A4DDDB;
-    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+    .navbar-brand:hover {
+        color: #A4DDDB;
+    }
+
+.main-content {
+    background-color: var(--background-color);
+    padding: 4rem 0;
     text-align: center;
 }
 
     .main-content h1 {
-        font-size: 4rem;
+        font-size: 4.5rem;
         margin-bottom: 30px;
     }
 
     .main-content p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         line-height: 1.5;
         max-width: 800px;
-        margin-bottom: 30px;
+        margin: 0 auto 30px;
     }
 
 .get-started-btn {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #007bff;
+    background-color: var(--secondary-color);
     color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
@@ -47,78 +95,58 @@
         background-color: #0056b3;
     }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bg-primary {
-    background-color: #261A40 !important;
-}
-
-
-header {
-    background-color: #261A40;
-    width: 100%;
-    color: rebeccapurple;
-}
-
-.bg-primary {
-    background-color: #261A40;
-}
-
-.navbar {
-    background-color: #261A40;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 #preferences-form {
-    background-color: #1B263A;
-    padding: 30px;
-    border-radius: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #826E77;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 26px;
-    width: 280%;
-    color:aliceblue
+    width: 100%;
+    color: aliceblue;
 }
-body.section.container.mt5 {
-    background-color: #1B263A;
-}
+
+    #preferences-form h2 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
 
     #preferences-form label {
         display: block;
-        margin-bottom: 10px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
     }
 
     #preferences-form input,
     #preferences-form select {
         display: block;
         width: 100%;
-        margin-bottom: 10px;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border-radius: 0.25rem;
+        border: 1px solid #A4DDDB;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #A4DDDB;
     }
+
+        #preferences-form input:focus,
+        #preferences-form select:focus {
+            outline: none;
+            border: 2px solid #007bff;
+        }
 
     #preferences-form button {
         display: block;
-        padding: 10px 20px;
+        padding: 0.75rem 1.5rem;
         background-color: #007bff;
         color: #ffffff;
-        border-radius: 5px;
+        border-radius: 0.5rem;
         cursor: pointer;
         transition: background-color 0.3s;
-        margin-top: 10px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-top: 1rem;
     }
 
         #preferences-form button:hover {
@@ -156,8 +184,11 @@ body.section.container.mt5 {
         }
 
 footer {
+    background-color: var(--primary-color);
     width: 100%;
+    padding: 1rem 0;
     color: #ffffff;
+    text-align: center;
 }
 
     footer .container {
